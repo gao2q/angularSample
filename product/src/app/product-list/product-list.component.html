@@ -1,0 +1,11 @@
+
+  <div *ngFor="let prodcut of myProducts; index as productId">
+    <h3>
+      <a [routerLink]="['/products', productId]">
+        {{ prodcut.name }}
+      </a>
+    </h3>
+    <button (click)="more()">
+      More..
+    </button>
+  </div>
